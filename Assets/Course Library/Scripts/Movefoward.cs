@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Movefoward : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed;
+    public float randomSpeed;
     void Start()
     {
         
@@ -10,6 +11,7 @@ public class Movefoward : MonoBehaviour
 
     void Update()
     {
+        randomSpeed = Random.Range(1f, 10f);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
