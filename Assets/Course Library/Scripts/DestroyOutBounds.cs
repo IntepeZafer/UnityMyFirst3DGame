@@ -10,9 +10,5 @@ public class DestroyOutBounds : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else if(transform.position.z < lowerBound)
-        {
-            Destroy(gameObject);
-        }
     }
 }
