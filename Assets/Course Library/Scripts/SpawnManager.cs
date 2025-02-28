@@ -5,6 +5,13 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] animalPrefabs;
     public float spawnRangeX;
     public float spawnPosZ;
+    public float startDelay;
+    public float spawnInterval;
+
+    private void Start()
+    {
+        InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))

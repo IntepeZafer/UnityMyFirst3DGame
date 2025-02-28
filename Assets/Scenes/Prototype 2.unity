@@ -621,6 +621,10 @@ MonoBehaviour:
   - {fileID: 1784840459}
   - {fileID: 1147800433}
   - {fileID: 268890767}
+  spawnRangeX: 20
+  spawnPosZ: 20
+  startDelay: 2
+  spawnInterval: 1.5
 --- !u!4 &1051651004
 Transform:
   m_ObjectHideFlags: 0
